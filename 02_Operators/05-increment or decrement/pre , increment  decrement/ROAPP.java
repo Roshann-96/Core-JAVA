@@ -8,5 +8,6 @@ public class ROAPP
 		b = ++a;
 		
 		System.out.printf(" A = %d  B = %d",a,b);
+		
 	}
 }

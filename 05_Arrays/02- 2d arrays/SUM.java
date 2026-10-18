@@ -1,5 +1,5 @@
 import java.util.*;
-public class CSUM
+public class SUM
 {
 	public static void main(String x[])
 	{
@@ -15,7 +15,8 @@ public class CSUM
 				a[i][j] = xyz.nextInt();
 			}
 		}
-		System.out.println(" ");
+		
+		System.out.print("\n");
 		System.out.println("Array is : ");
 		for(int i=0; i<a.length; i++)
 		{
@@ -27,18 +28,16 @@ public class CSUM
 		}
 		
 		int sum[] = new int[3];
-		for(int j=0; j<a.length; j++)
+		for(int i=0; i<a.length; i++)
 		{
-			for(int i=0; i<a[j].length; i++)
+			for(int j=0; j<a[i].length; j++)
 			{
-				sum[i] = sum[i] + a[j][i]; 
+				sum[i] = sum[i] + a[i][j]; 
 			}
 		}
 		for(int i=0; i<sum.length; i++)
 		{
-			System.out.printf("Column %d Sum = %d \n", i+1, sum[i] );
+			System.out.printf("\nRow %d Sum = %d ",i+1, sum[i] );
 		}
-		
-		
 	}
 }
