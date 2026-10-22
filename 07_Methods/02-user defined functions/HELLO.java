@@ -7,6 +7,6 @@ public class HELLO
 	}
 	public static void display()
 	{
-		System.out.println("Hello Engineer");
+		System.out.println("Hello Engineer ");
 	}
 }
